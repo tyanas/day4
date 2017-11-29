@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>формочка2</title>
+    <style>
+        body {
+            color: #7e3717;
+        }
+        fieldset {
+            border: 1px solid #87cecc;
+            border-radius: 5px;
+            background-color: #faf3ee;
+            margin-bottom: 10px;
+        }
+        legend {
+            color: #87cecc;
+        }
+
+        label {
+            width: 120px;
+            display: inline-block;
+        }
+
+        .special:hover {
+            color: red;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 200px;
+            box-sizing: border-box;
+        }
+        fieldset div {
+            margin-bottom: 8px;
+        }
+        fieldset div:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <form>
+        <fieldset>
+            <legend>Контактная информация</legend>
+
+            <div>
+                <label for="name">имя</label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label class="special" for="email2">Почта</label>
+                <input type="email" id="email2">
+            </div>
+
+            <div>
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+
+            <div>
+                <label for="age">Возраст</label>
+                <input type="number" id="age">
+            </div>
+
+            <div>
+                <label for="select">любимая кухня</label>
+                <select id="select">
+                    <option value=""></option>
+                    <option value="1">японская</option>
+                    <option value="2">грузинская</option>
+                    <option value="3">турецкая</option>
+                    <option value="4">китайская</option>
+                    <option value="5">вьетнамская</option>
+                </select>
+            </div>
+            <div>
+                <label for="recipe">ваш любимый рецепт</label>
+                <textarea id="recipe" rows="5" cols="50" title="Это title" placeholder="начните набирать текст"></textarea>
+            </div>
+        </fieldset>
+
+        <input type='submit' value='Отправить'>
+    </form>
+</body>
+</html>
