@@ -31,4 +31,5 @@ div {
   -moz-transform: rotate(720deg);
   -webkit-transform: rotate(720deg);
   transform: rotate(720deg);
+    background-color: red;
 }
