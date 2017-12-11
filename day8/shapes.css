@@ -1,0 +1,53 @@
+.d1 {
+    width: 100px;
+    height: 100px;
+    background: #83A7C9;
+    border-radius: 50%;
+}
+
+.tri {
+    border-width: 50px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-top-color: red;
+    border-bottom-color: green;
+    border-left-color: blue;
+    border-right-color: rgb(227, 39, 220);
+
+}
+
+
+
+
+
+/* треугольник */
+
+.d14 {
+    margin: 50px 0; height: 0; width: 0;
+    position: relative;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #E7337A;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+}
+.d14:before,
+.d14:after {
+    content: "";
+    height: 0; width: 0;
+    position: absolute;
+}
+.d14:before {
+    top: -26px; left: -32px;
+    border-bottom: 40px solid #E7337A;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(-35deg);
+}
+.d14:after {
+    top: 2px; left: -53px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #E7337A;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+}
